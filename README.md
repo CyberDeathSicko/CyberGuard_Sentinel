@@ -70,38 +70,50 @@ CyberGuard Sentinel is an avant-garde cybersecurity toolkit designed for cutting
 sudo apt-get update && sudo apt-get install -y git
 git clone https://github.com/your-username/CyberGuard-Sentinel.git
 cd CyberGuard-Sentinel
+```
 
+```bash
 ### Arch Linux / Debian:
 sudo pacman -Syu git
 git clone https://github.com/your-username/CyberGuard-Sentinel.git
 cd CyberGuard-Sentinel
-
+```
+```bash
 ### 🪟 Powershell (Windows):
 git clone https://github.com/your-username/CyberGuard-Sentinel.git
 cd .\CyberGuard-Sentinel
+```
 
+```bash
 2. **Configure Target:**
 
     Update the `TARGET_IP`, `TARGET_PORT`, and `TARGET_PROTOCOL` variables in `cyberguard_config.sh` with your target information.
+```
 
+```bash
 3. **Run the Toolkit:**
     ./cyberguard_config.sh
-
+```
+```bash
 # 🌐 Configuration
 TARGET_IP="192.168.1.1"
 TARGET_PORT="22"
 TARGET_PROTOCOL="ssh"
 # ... other configurations
-
+```
+```bash
 ## 🎮 Usage
 
 1. Choose an option from the main menu.
 2. Follow the prompts to configure and execute specific tasks.
-
+```
+```bash
 ## 🤝 Contributing
 
 Contributions are welcome! If you have improvements or new features to add, feel free to fork the repository and submit a pull request.
-
+```
+```bash
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE). 🚀
+```
