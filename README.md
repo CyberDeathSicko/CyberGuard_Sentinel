@@ -14,20 +14,20 @@ CyberGuard Sentinel is an avant-garde cybersecurity toolkit designed for cutting
 - [🤝 Contributing](#contributing)
 - [📜 License](#license)
 
-# 🛠 Features
+## 🛠 Features
 
-| **Feature**                    | **Description**                                  |
-| ------------------------------ | ------------------------------------------------ |
-| **OSINT**                      | Gather intelligence from diverse sources.         |
-| **Vulnerability Scanning**     | Identify and assess potential vulnerabilities.   |
+| **Feature**              | **Description**                                                |
+| ------------------------ | -------------------------------------------------------------- |
+| **OSINT**                | Gather intelligence from diverse sources.                      |
+| **Vulnerability Scanning** | Identify and assess potential vulnerabilities.              |
 | **Active Directory Exploitation** | *(Currently in development)* Explore and exploit Active Directory weaknesses.|
-| **Privilege Escalation**       | *(Currently in development)* Escalate privileges on compromised systems.      |
-| **System Enumeration**         | *(Currently in development)* Gather detailed information about the target.    |
-| **UAC Bypass (Windows)**       | *(Currently in development)* Bypass User Account Control on Windows systems.  |
-| **Azure Exploit**              | *(Currently in development)* Exploit vulnerabilities in Azure environments.   |
-| **Microsoft Phishing**         | *(Currently in development)* Perform phishing attacks targeting Microsoft services. |
-| **Azure Enumeration**          | *(Currently in development)* Enumerate Azure resources and configurations. |
-| **Additional Features**        | Stay tuned for more features in upcoming releases. 🚀 |
+| **Privilege Escalation** | *(Currently in development)* Escalate privileges on compromised systems.|
+| **System Enumeration**   | *(Currently in development)* Gather detailed information about the target.|
+| **UAC Bypass (Windows)** | *(Currently in development)* Bypass User Account Control on Windows systems.|
+| **Azure Exploit**        | *(Currently in development)* Exploit vulnerabilities in Azure environments.|
+| **Microsoft Phishing**   | *(Currently in development)* Perform phishing attacks targeting Microsoft services.|
+| **Azure Enumeration**    | *(Currently in development)* Enumerate Azure resources and configurations.|
+| **Additional Features**  | Stay tuned for more features in upcoming releases. 🚀 |
 
 ## 🔧 Installation
 
