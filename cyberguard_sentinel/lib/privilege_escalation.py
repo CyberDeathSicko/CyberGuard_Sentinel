@@ -1,52 +1,44 @@
-# Function to display Privilege Escalation options
-def privilege_escalation_options():
-    print("Privilege Escalation Section")
-    print("1. Kernel Exploits")
-    print("2. Sudo Exploits")
-    print("3. Setuid and Setgid Binaries")
-    print("4. Cron Jobs")
-    print("0. Return to Main Menu")
+def show_privilege_escalation_menu():
+    print("Hey there! Wanna check out some cool Privilege Escalation options?")
+    print("1. Mess with Kernel Exploits")
+    print("2. Dive into Sudo Exploits")
+    print("3. Peek at Setuid and Setgid Binaries")
+    print("4. See what's up with Cron Jobs")
+    print("0. Nah, take me back to the Main Menu")
 
-# Function to perform Privilege Escalation
-def perform_privilege_escalation():
+def try_privilege_escalation():
     while True:
-        privilege_escalation_options()
-        pe_choice = input("Enter your choice (0-4): ")
+        show_privilege_escalation_menu()
+        user_choice = input("What's your move? Just type a number (0-4): ")
 
-        if pe_choice == '0':
+        if user_choice == '0':
             break
-        elif pe_choice == '1':
-            kernel_exploits()
-        elif pe_choice == '2':
-            sudo_exploits()
-        elif pe_choice == '3':
-            setuid_setgid_binaries()
-        elif pe_choice == '4':
-            cron_jobs()
+        elif user_choice == '1':
+            mess_with_kernel_exploits()
+        elif user_choice == '2':
+            dive_into_sudo_exploits()
+        elif user_choice == '3':
+            peek_at_setuid_setgid_binaries()
+        elif user_choice == '4':
+            see_whats_up_with_cron_jobs()
         else:
-            print("Invalid choice. Please try again.")
+            print("Oops, that doesn't look like a valid choice. Give it another shot, maybe?")
 
-# Function to perform Kernel Exploits
-def kernel_exploits():
-    print("Performing Kernel Exploits...")
-    # Implement kernel exploits logic here
+def mess_with_kernel_exploits():
+    print("Alright, let's see if we can mess with some Kernel Exploits...")
+    # Creating the code for Kernal Exploit, just need more time
 
-# Function to perform Sudo Exploits
-def sudo_exploits():
-    print("Performing Sudo Exploits...")
-    # Implement sudo exploits logic here
+def dive_into_sudo_exploits():
+    print("Time to dive into the world of Sudo Exploits! Brace yourself, things might get interesting!")
+    # Creating the code for Sudo Exploit, just need more time
 
-# Function to perform Setuid and Setgid Binaries Exploits
-def setuid_setgid_binaries():
-    print("Performing Setuid and Setgid Binaries Exploits...")
-    # Implement setuid and setgid binaries exploits logic here
+def peek_at_setuid_setgid_binaries():
+    print("Curiosity never hurt anyone, right? Let's take a peek at those Setuid and Setgid Binaries...")
+    # Creating setuid and setgid binaries exploit, just need more time
 
-# Function to perform Cron Jobs Exploits
-def cron_jobs():
-    print("Performing Cron Jobs Exploits...")
-    # Implement cron jobs exploits logic here
+def see_whats_up_with_cron_jobs():
+    print("Ready to uncover the mysteries of Cron Jobs? Let's see what kind of mischief we can find!")
+    # Creating cron jobs exploit, just need more time
 
-# Call the main function to start Privilege Escalation
-perform_privilege_escalation()
-# Call the main function to start Privilege Escalation
-perform_privilege_escalation
+# Buckle up! We're about to explore some Privilege Escalation options!
+try_privilege_escalation()
