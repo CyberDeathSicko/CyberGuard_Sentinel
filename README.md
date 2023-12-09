@@ -6,6 +6,9 @@ CyberGuard Sentinel is a powerful cybersecurity toolkit designed for comprehensi
 
 - [Features](#features)
 - [Installation](#installation)
+  - [Kali Linux / Debian](#kali-linux--debian)
+  - [Arch Linux / Debian](#arch-linux--debian)
+  - [Powershell (Windows)](#powershell-windows)
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -21,7 +24,6 @@ CyberGuard Sentinel is a powerful cybersecurity toolkit designed for comprehensi
 | **Privilege Escalation**       | Escalate privileges on compromised systems.      |
 | **System Enumeration**         | Gather detailed information about the target.    |
 | **UAC Bypass (Windows)**       | Bypass User Account Control on Windows systems.  |
-
 ## Installation
 
 1. **Clone the Repository:**
@@ -30,6 +32,39 @@ CyberGuard Sentinel is a powerful cybersecurity toolkit designed for comprehensi
     git clone https://github.com/your-username/CyberGuard-Sentinel.git
     cd CyberGuard-Sentinel
     ```
+
+2. **Configure Target:**
+
+    Update the `TARGET_IP`, `TARGET_PORT`, and `TARGET_PROTOCOL` variables in `cyberguard_config.sh` with your target information.
+
+3. **Run the Toolkit:**
+
+    ```bash
+    ./cyberguard_config.sh
+    ```
+
+### Platform-specific installation:
+
+#### Kali Linux / Debian:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y git
+git clone https://github.com/your-username/CyberGuard-Sentinel.git
+cd CyberGuard-Sentinel
+
+#### Arch Linux / Debain:
+
+```bash
+sudo pacman -Syu git
+git clone https://github.com/your-username/CyberGuard-Sentinel.git
+cd CyberGuard-Sentinel
+
+#### Powershell (Window):
+
+```bash
+git clone https://github.com/your-username/CyberGuard-Sentinel.git
+cd .\CyberGuard-Sentinel
 
 2. **Configure Target:**
 
