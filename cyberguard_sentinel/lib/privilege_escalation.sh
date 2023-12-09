@@ -32,25 +32,25 @@ function perform_privilege_escalation() {
 # Function to perform Kernel Exploits
 function kernel_exploits() {
     echo "Performing Kernel Exploits..."
-    # Add your code for kernel exploits
+    # I'm creating for kernel exploits
 }
 
 # Function to perform Sudo Exploits
 function sudo_exploits() {
     echo "Performing Sudo Exploits..."
-    # Add your code for sudo exploits
+    # I'm creating for sudo exploits
 }
 
 # Function to perform Setuid and Setgid Binaries Exploits
 function setuid_setgid_binaries() {
     echo "Performing Setuid and Setgid Binaries Exploits..."
-    # Add your code for setuid and setgid binaries exploits
+    # I'm creating for setuid and setgid binaries exploits
 }
 
 # Function to perform Cron Jobs Exploits
 function cron_jobs() {
     echo "Performing Cron Jobs Exploits..."
-    # Add your code for cron jobs exploits
+    # I'm creating for cron jobs exploits
 }
 
 # Call the main function to start Privilege Escalation
