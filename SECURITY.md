@@ -16,7 +16,7 @@ If you discover a security vulnerability, please follow these steps:
 
 1. **Check Supported Versions:** Ensure that the vulnerability exists in a supported version (those marked with :white_check_mark: in the table above).
 
-2. **Report Vulnerability:** Report the vulnerability by [creating an issue](link_to_your_issue_tracker) in our issue tracker. Provide detailed information, steps to reproduce, and any other relevant details.
+2. **Report Vulnerability:** Report the vulnerability by [creating an issue](https://github.com/CyberDeathSicko/CyberGuard_Sentinel/issues) in our issue tracker. Provide detailed information, steps to reproduce, and any other relevant details.
 
 3. **Vulnerability Assessment:** Our security team will assess the reported vulnerability. Expect regular updates on the status and progress of the assessment.
 
