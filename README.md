@@ -85,10 +85,7 @@ cd .\CyberGuard-Sentinel
     Update the `TARGET_IP`, `TARGET_PORT`, and `TARGET_PROTOCOL` variables in `cyberguard_config.sh` with your target information.
 
 3. **Run the Toolkit:**
-
-    ```bash
     ./cyberguard_config.sh
-    ```
 
 # 🌐 Configuration
 TARGET_IP="192.168.1.1"
