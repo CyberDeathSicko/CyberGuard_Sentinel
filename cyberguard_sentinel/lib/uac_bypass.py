@@ -23,8 +23,7 @@ def run_as_admin(command):
 
 def uac_bypass_for_user():
     print("Performing UAC Bypass for User...")
-    try:
-        # Implement UAC Bypass for User logic here
+    try
         # This command that launches a malicious UAC User
         command = ["your_command_for_user_here", "/param", "your_param_here"]
         subprocess.run(command, check=True)
@@ -35,7 +34,6 @@ def uac_bypass_for_user():
 def uac_bypass_with_gui():
     print("Performing UAC Bypass with GUI...")
     try:
-        # Implement your UAC Bypass with GUI logic here
         # This command that launches a malicious GUI executable
         subprocess.run(['malicious_gui.exe'], check=True)
         time.sleep(3)  # Adding a delay for effect
@@ -46,7 +44,6 @@ def uac_bypass_with_gui():
 def uac_bypass_exploit():
     print("Performing UAC Bypass exploit...")
     try:
-        # Implement your UAC Bypass exploit logic here
         # This command that exploits a vulnerability to bypass UAC
         subprocess.run(['exploit_tool.exe'], check=True)
         time.sleep(5)  # Adding a delay for effect
