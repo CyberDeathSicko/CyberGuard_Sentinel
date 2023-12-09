@@ -83,6 +83,34 @@ def security_policies():
         except FileNotFoundError:
             pass
 
+def hardware_information():
+    print("Getting Hardware Information...")
+    try:
+        subprocess.run(['systeminfo'], check=True)
+    except subprocess.CalledProcessError as e:
+        print("Error retrieving hardware information:", str(e))
+
+def list_scheduled_tasks():
+    print("Scheduled Tasks:")
+    try:
+        subprocess.run(['schtasks'], check=True)
+    except subprocess.CalledProcessError as e:
+        print("Error listing scheduled tasks:", str(e))
+
+def security_policies():
+    print("Security Policies:")
+    try:
+        subprocess.run(['secedit', '/export', '/cfg', 'security_policies.txt'], check=True)
+        with open('security_policies.txt', 'r') as file:
+            print(file.read())
+    except subprocess.CalledProcessError as e:
+        print("Error retrieving security policies information:", str(e))
+    finally:
+        try:
+            os.remove('security_policies.txt')
+        except FileNotFoundError:
+            pass
+
 def perform_system_enumeration():
     while True:
         system_enumeration_options()
