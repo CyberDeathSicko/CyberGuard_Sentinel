@@ -22,6 +22,8 @@ If you discover a security vulnerability, please follow these steps:
 
 4. **Resolution:** If the vulnerability is accepted, we will work on a resolution. Once resolved, a new release will be made.
 
-5. **Version Update:** After fixing the vulnerability, we recommend users to update to the latest supported version.
+5. **Version Update:** After fixing the vulnerability, we recommend users update to the latest supported version.
 
 Thank you for contributing to the security of our project.
+
+**Note:** The current version is Beta.
