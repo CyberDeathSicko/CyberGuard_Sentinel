@@ -1,4 +1,6 @@
-# Function to display System Enumeration options
+import subprocess
+import os
+
 def system_enumeration_options():
     print("System Enumeration Section")
     print("1. Basic System Information")
@@ -18,9 +20,6 @@ def system_enumeration_options():
     print("15. Security Policies")
     print("0. Exit")
 
-# Add new functions for options 8-15
-
-# Function to get Hardware Information
 def hardware_information():
     print("Getting Hardware Information...")
     try:
@@ -28,7 +27,6 @@ def hardware_information():
     except subprocess.CalledProcessError as e:
         print("Error retrieving hardware information:", str(e))
 
-# Function to display Firewall Configuration
 def firewall_configuration():
     print("Firewall Configuration:")
     try:
@@ -36,7 +34,6 @@ def firewall_configuration():
     except subprocess.CalledProcessError as e:
         print("Error retrieving firewall configuration:", str(e))
 
-# Function to display Open Network Connections
 def open_network_connections():
     print("Open Network Connections:")
     try:
@@ -44,7 +41,6 @@ def open_network_connections():
     except subprocess.CalledProcessError as e:
         print("Error retrieving open network connections:", str(e))
 
-# Function to display System Logs
 def system_logs():
     print("System Logs:")
     try:
@@ -52,7 +48,6 @@ def system_logs():
     except subprocess.CalledProcessError as e:
         print("Error retrieving system logs:", str(e))
 
-# Function to display Printers and Scanners
 def printers_and_scanners():
     print("Printers and Scanners:")
     try:
@@ -60,7 +55,6 @@ def printers_and_scanners():
     except subprocess.CalledProcessError as e:
         print("Error retrieving printers and scanners information:", str(e))
 
-# Function to display USB Devices
 def usb_devices():
     print("USB Devices:")
     try:
@@ -68,7 +62,6 @@ def usb_devices():
     except subprocess.CalledProcessError as e:
         print("Error retrieving USB devices information:", str(e))
 
-# Function to list Scheduled Tasks
 def list_scheduled_tasks():
     print("Scheduled Tasks:")
     try:
@@ -76,7 +69,6 @@ def list_scheduled_tasks():
     except subprocess.CalledProcessError as e:
         print("Error listing scheduled tasks:", str(e))
 
-# Function to display Security Policies
 def security_policies():
     print("Security Policies:")
     try:
@@ -86,8 +78,10 @@ def security_policies():
     except subprocess.CalledProcessError as e:
         print("Error retrieving security policies information:", str(e))
     finally:
-        # Remove the temporary file created
-        subprocess.run(['del', 'security_policies.txt'], shell=True)
+        try:
+            os.remove('security_policies.txt')
+        except FileNotFoundError:
+            pass
 
 def perform_system_enumeration():
     while True:
@@ -102,34 +96,23 @@ def perform_system_enumeration():
             print("Exiting System Enumeration. Goodbye!")
             break
         elif se_choice == 1:
-            basic_system_information()
-        elif se_choice == 2:
-            network_information()
-        elif se_choice == 3:
-            running_processes()
-        elif se_choice == 4:
-            installed_software()
-        elif se_choice == 5:
-            users_and_groups()
-        elif se_choice == 6:
-            system_uptime()
-        elif se_choice == 7:
-            disk_usage()
-        elif se_choice == 8:
             hardware_information()
-        elif se_choice == 9:
+        elif se_choice == 2:
             firewall_configuration()
-        elif se_choice == 10:
+        elif se_choice == 3:
             open_network_connections()
-        elif se_choice == 11:
+        elif se_choice == 4:
             system_logs()
-        elif se_choice == 12:
+        elif se_choice == 5:
             printers_and_scanners()
-        elif se_choice == 13:
+        elif se_choice == 6:
             usb_devices()
-        elif se_choice == 14:
+        elif se_choice == 7:
             list_scheduled_tasks()
-        elif se_choice == 15:
+        elif se_choice == 8:
             security_policies()
         else:
             print("Invalid choice. Please try again.")
+
+# Call perform_system_enumeration to start the program
+perform_system_enumeration()
