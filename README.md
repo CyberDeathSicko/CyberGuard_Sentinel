@@ -1,6 +1,6 @@
 # CyberGuard Sentinel
 
-CyberGuard Sentinel is an advanced cybersecurity toolkit crafted for robust security assessments. It integrates a diverse array of tools and scripts, spanning Open Source Intelligence (OSINT), Vulnerability Scanning, Active Directory Exploitation, Privilege Escalation, System Enumeration, and UAC Bypass for Windows systems.
+CyberGuard Sentinel is an advanced cybersecurity toolkit designed for comprehensive security assessments. It integrates tools for Open Source Intelligence (OSINT), Vulnerability Scanning, Active Directory Exploitation, Privilege Escalation, System Enumeration, and UAC Bypass on Windows systems.
 
 ## Table of Contents
 
@@ -30,7 +30,6 @@ CyberGuard Sentinel is an advanced cybersecurity toolkit crafted for robust secu
 ### Prerequisites:
 
 - [Git](https://git-scm.com/)
-- [Bash](https://www.gnu.org/software/bash/) (Linux) or [PowerShell](https://docs.microsoft.com/en-us/powershell/) (Windows)
 
 ### Steps:
 
@@ -43,7 +42,15 @@ CyberGuard Sentinel is an advanced cybersecurity toolkit crafted for robust secu
 
 2. **Configure Target:**
 
-    Update the `TARGET_IP`, `TARGET_PORT`, and `TARGET_PROTOCOL` variables in `cyberguard_config.sh` to align with your target information.
+    Update `cyberguard_config.sh` with your target information:
+
+    ```bash
+    # Configuration
+    TARGET_IP="192.168.1.1"
+    TARGET_PORT="22"
+    TARGET_PROTOCOL="ssh"
+    # ... other configurations
+    ```
 
 3. **Run the Toolkit:**
 
@@ -56,8 +63,7 @@ CyberGuard Sentinel is an advanced cybersecurity toolkit crafted for robust secu
 ### Kali Linux / Debian:
 
 ```bash
-sudo apt-get update
-sudo apt-get install -y git
+sudo apt-get update && sudo apt-get install -y git
 git clone https://github.com/your-username/CyberGuard-Sentinel.git
 cd CyberGuard-Sentinel
 
