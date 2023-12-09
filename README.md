@@ -1,6 +1,8 @@
 # 🚀 CyberGuard Sentinel - Beta Version (Currently in Development)
 
-CyberGuard Sentinel is an avant-garde cybersecurity toolkit designed for cutting-edge security assessments. Seamlessly integrating tools for Open Source Intelligence (OSINT), Vulnerability Scanning, Active Directory Exploitation, Privilege Escalation, System Enumeration, and UAC Bypass on Windows systems.
+CyberGuard Sentinel is an avant-garde cybersecurity toolkit designed for cutting-edge security assessments, with a special focus on Microsoft products. Seamlessly integrating tools for Open Source Intelligence (OSINT), Vulnerability Scanning, Active Directory Exploitation, Privilege Escalation, System Enumeration, and UAC Bypass on Windows systems.
+
+The tool is specifically tailored for targeting Microsoft products, including Windows servers, Windows applications, and a wide range of Microsoft services.
 
 ## 🌐 Table of Contents
 
