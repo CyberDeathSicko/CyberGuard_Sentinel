@@ -94,13 +94,7 @@ cd .\CyberGuard-Sentinel
 3. **Run the Toolkit:**
     ./cyberguard_config.sh
 ```
-```bash
-# 🌐 Configuration
-TARGET_IP="192.168.1.1"
-TARGET_PORT="22"
-TARGET_PROTOCOL="ssh"
-# ... other configurations
-```
+
 ```bash
 ## 🎮 Usage
 
