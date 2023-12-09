@@ -1,8 +1,8 @@
-# 🌐 CyberGuard Sentinel
+# 🚀 CyberGuard Sentinel - Beta Version (Currently in Development)
 
-CyberGuard Sentinel is an avant-garde cybersecurity toolkit designed for cutting-edge security assessments. It seamlessly integrates tools for Open Source Intelligence (OSINT), Vulnerability Scanning, Active Directory Exploitation, Privilege Escalation, System Enumeration, and UAC Bypass on Windows systems.
+CyberGuard Sentinel is an avant-garde cybersecurity toolkit designed for cutting-edge security assessments. Seamlessly integrating tools for Open Source Intelligence (OSINT), Vulnerability Scanning, Active Directory Exploitation, Privilege Escalation, System Enumeration, and UAC Bypass on Windows systems.
 
-## 🚀 Table of Contents
+## 🌐 Table of Contents
 
 - [🛠 Features](#features)
 - [🔧 Installation](#installation)
@@ -14,16 +14,20 @@ CyberGuard Sentinel is an avant-garde cybersecurity toolkit designed for cutting
 - [🤝 Contributing](#contributing)
 - [📜 License](#license)
 
-## 🛠 Features
+# 🛠 Features
 
 | **Feature**                    | **Description**                                  |
 | ------------------------------ | ------------------------------------------------ |
 | **OSINT**                      | Gather intelligence from diverse sources.         |
 | **Vulnerability Scanning**     | Identify and assess potential vulnerabilities.   |
-| **Active Directory Exploitation** | Explore and exploit Active Directory weaknesses.|
-| **Privilege Escalation**       | Escalate privileges on compromised systems.      |
-| **System Enumeration**         | Gather detailed information about the target.    |
-| **UAC Bypass (Windows)**       | Bypass User Account Control on Windows systems.  |
+| **Active Directory Exploitation** | *(Currently in development)* Explore and exploit Active Directory weaknesses.|
+| **Privilege Escalation**       | *(Currently in development)* Escalate privileges on compromised systems.      |
+| **System Enumeration**         | *(Currently in development)* Gather detailed information about the target.    |
+| **UAC Bypass (Windows)**       | *(Currently in development)* Bypass User Account Control on Windows systems.  |
+| **Azure Exploit**              | *(Currently in development)* Exploit vulnerabilities in Azure environments.   |
+| **Microsoft Phishing**         | *(Currently in development)* Perform phishing attacks targeting Microsoft services. |
+| **Azure Enumeration**          | *(Currently in development)* Enumerate Azure resources and configurations. |
+| **Additional Features**        | Stay tuned for more features in upcoming releases. 🚀 |
 
 ## 🔧 Installation
 
@@ -86,11 +90,6 @@ cd .\CyberGuard-Sentinel
     ./cyberguard_config.sh
     ```
 
-## ⚙ Configuration
-
-Adjust the configuration in `cyberguard_config.sh` to match your environment and specify the target details.
-
-```bash
 # 🌐 Configuration
 TARGET_IP="192.168.1.1"
 TARGET_PORT="22"
@@ -108,4 +107,4 @@ Contributions are welcome! If you have improvements or new features to add, feel
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE). 🚀
