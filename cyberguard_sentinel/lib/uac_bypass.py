@@ -5,7 +5,8 @@ import sys
 def is_admin():
     try:
         return ctypes.windll.shell32.IsUserAnAdmin()
-    except:
+    except Exception as e:
+        print(f"Error checking admin privileges: {e}")
         return False
 
 def run_as_admin(command):
@@ -62,11 +63,11 @@ def perform_uac_operations():
         if choice == 0:
             break
         elif choice == 1:
-            uac_bypass_for_user()
+            run_as_admin(uac_bypass_for_user)
         elif choice == 2:
-            uac_bypass_with_gui()
+            run_as_admin(uac_bypass_with_gui)
         elif choice == 3:
-            uac_bypass_exploit()
+            run_as_admin(uac_bypass_exploit)
         else:
             print("Invalid choice. Please try again.")
 
