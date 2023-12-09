@@ -17,6 +17,8 @@ def run_as_admin(command):
             ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, ' '.join(sys.argv), None, 1)
     except subprocess.CalledProcessError as e:
         print(f"Error executing command with elevated privileges: {e}")
+    except Exception as e:
+        print(f"Error: {e}")
 
 def uac_bypass_for_user():
     print("Performing UAC Bypass for User...")
@@ -62,14 +64,14 @@ def perform_uac_operations():
 
         if choice == 0:
             break
-        elif choice == 1:
-            run_as_admin(uac_bypass_for_user)
-        elif choice == 2:
-            run_as_admin(uac_bypass_with_gui)
-        elif choice == 3:
-            run_as_admin(uac_bypass_exploit)
+        elif 1 <= choice <= 3:
+            functions = [None, uac_bypass_for_user, uac_bypass_with_gui, uac_bypass_exploit]
+            run_as_admin(functions[choice])
         else:
             print("Invalid choice. Please try again.")
 
-# Call the main function to start UAC Operations
-perform_uac_operations()
+if __name__ == "__main__":
+    try:
+        perform_uac_operations()
+    except KeyboardInterrupt:
+        print("\nExiting the program.")
