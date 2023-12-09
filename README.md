@@ -24,6 +24,7 @@ CyberGuard Sentinel is a powerful cybersecurity toolkit designed for comprehensi
 | **Privilege Escalation**       | Escalate privileges on compromised systems.      |
 | **System Enumeration**         | Gather detailed information about the target.    |
 | **UAC Bypass (Windows)**       | Bypass User Account Control on Windows systems.  |
+
 ## Installation
 
 1. **Clone the Repository:**
@@ -52,19 +53,6 @@ sudo apt-get update
 sudo apt-get install -y git
 git clone https://github.com/your-username/CyberGuard-Sentinel.git
 cd CyberGuard-Sentinel
-
-#### Arch Linux / Debain:
-
-```bash
-sudo pacman -Syu git
-git clone https://github.com/your-username/CyberGuard-Sentinel.git
-cd CyberGuard-Sentinel
-
-#### Powershell (Window):
-
-```bash
-git clone https://github.com/your-username/CyberGuard-Sentinel.git
-cd .\CyberGuard-Sentinel
 
 2. **Configure Target:**
 
