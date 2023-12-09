@@ -1,6 +1,6 @@
 # CyberGuard Sentinel
 
-CyberGuard Sentinel is a powerful cybersecurity toolkit designed for comprehensive security assessments. It includes a wide range of tools and scripts for Open Source Intelligence (OSINT), Vulnerability Scanning, Active Directory Exploitation, Privilege Escalation, System Enumeration, and UAC Bypass on Windows systems.
+CyberGuard Sentinel is an advanced cybersecurity toolkit crafted for robust security assessments. It integrates a diverse array of tools and scripts, spanning Open Source Intelligence (OSINT), Vulnerability Scanning, Active Directory Exploitation, Privilege Escalation, System Enumeration, and UAC Bypass for Windows systems.
 
 ## Table of Contents
 
@@ -27,6 +27,13 @@ CyberGuard Sentinel is a powerful cybersecurity toolkit designed for comprehensi
 
 ## Installation
 
+### Prerequisites:
+
+- [Git](https://git-scm.com/)
+- [Bash](https://www.gnu.org/software/bash/) (Linux) or [PowerShell](https://docs.microsoft.com/en-us/powershell/) (Windows)
+
+### Steps:
+
 1. **Clone the Repository:**
 
     ```bash
@@ -36,7 +43,7 @@ CyberGuard Sentinel is a powerful cybersecurity toolkit designed for comprehensi
 
 2. **Configure Target:**
 
-    Update the `TARGET_IP`, `TARGET_PORT`, and `TARGET_PROTOCOL` variables in `cyberguard_config.sh` with your target information.
+    Update the `TARGET_IP`, `TARGET_PORT`, and `TARGET_PROTOCOL` variables in `cyberguard_config.sh` to align with your target information.
 
 3. **Run the Toolkit:**
 
@@ -44,15 +51,24 @@ CyberGuard Sentinel is a powerful cybersecurity toolkit designed for comprehensi
     ./cyberguard_config.sh
     ```
 
-### Platform-specific installation:
+## Platform-specific Installation:
 
-#### Kali Linux / Debian:
+### Kali Linux / Debian:
 
 ```bash
 sudo apt-get update
 sudo apt-get install -y git
 git clone https://github.com/your-username/CyberGuard-Sentinel.git
 cd CyberGuard-Sentinel
+
+### Arch Linux / Debian:
+sudo pacman -Syu git
+git clone https://github.com/your-username/CyberGuard-Sentinel.git
+cd CyberGuard-Sentinel
+
+### POwershell
+git clone https://github.com/your-username/CyberGuard-Sentinel.git
+cd .\CyberGuard-Sentinel
 
 2. **Configure Target:**
 
